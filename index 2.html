@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Mio Sito</title>
+</head>
+<body>
+    <h1>L'embedding dell'HTML5</h1>
+    <u>
+    <li>Home</li>
+    <li><a href="embedding.html">embadding</a> </li>
+    <li><a href="HTML5.html">HTML5</a></li>
+    </u>
+
+
+    <form enctype="multipart/form-data">
+    
+        <fieldset>
+            <legend>Anagrafia</legend>
+            <label for="firstname">Nome</label><span style="color: blue;">*</span><br>
+            <input type = "text" name ="firstname" id="firstname" size="30" minlength="3" maxlength="30" autofocus required><br>
+         <label for="lastname">Cognome</label><br>
+            <input type="text" name="lastname" id="lastname"><br>
+            <label for="male">M</label><input type="radio" name="gender" id="male" value="M">
+            <label for="female">F</label><input type="radio" name="gender" id="female" value="F"><br>
+            <label for="dateofbirth">Data nascita</label><br>
+            <input type="date" name="dateofbirth" id="dateofbirth"><br>
+            <label for="time">Ora di nascita</label><br>
+            <input type="time" name="time" id="time"><br>
+            <label form="">Inserisci il tuo url</label><br>
+            <input type="url" name="mysite" id="mysite" placeholder="Inserisci l'url del tuo sito web"><br>
+            <label for="email">Inserisci la tua email</label><br>
+            <input type="email" name="email" id="email" placeholder=" Inserisci la tua email"><br>
+            <label for="number">Inserisci il numero di ...</label><br>
+            <input type="number" name="number" id="number" min="0" max="20"><br>
+            <label for="score">Inserisci la tua valutazione</label><br>
+            <input type="range" name="score" id="score" min="25" max="75"><br> 
+
+        <fieldset>
+            <label for="search">Cerca</label><br>
+            <input type="search" name="search" id="search"><br>
+
+        </fieldset>
+            
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Interessi</legend>
+             <label for="">Musica</label>
+            <input type="checkbox" name="music" id="music"><br>
+             <label for="">Fotografia</label>
+            <input type="checkbox" name="fioto" id="foto"><br>
+            <label for="">Design</label>
+            <input type="checkbox" name="design" id="design"><br>
+            <label for="">Coding</label>
+            <input type="checkbox" name="coding" id="coding"><br>
+            <label for="color">Colore Preferito</label>
+            <input type="color" name="color" id="color"><br>
+            <label for="car">Scegli l'auto</label>
+            <select name="car" id="car" multiple size="1">
+                <option value="">Scegli tra i seguenti veicoli</option>
+                <optgroup label="Auto Italiane">
+
+                    <option value="panda">Panda</option>
+                    <option value="panda">Uno</optgroup>
+                    <option value="panda">Ritmo</option>
+
+                </optgroup>
+
+                <optgroup> <label for="Auto Tedesche">
+
+                    <option value="Mercedes">Classe A</option>
+                    <option value="Mercedes">Classe B</option>
+                    <option value="Mercedes">Classe C</option>
+
+                </optgroup>
+
+                    <option value="Audi">Audi</option>
+
+                    <option value="Toyota">Toyota</option>
+
+                
+            </select><br>
+            <small>per selezionare valori non contigui usare il tasto <kbd> ctrl</kbd> </small>
+
+
+        </fieldset>
+
+        <label for="msg">Lascia un Messaggio</label><br>
+        <textarea name="msg" id="file" cols="30" rows="10"  placeholder="Inserisci il tuo messaggio"></textarea><br>
+        <label for="file">Carica le tue immagini</label><br>
+
+        <input type="file" name="file" id="file"accept="video/*" multiple><br>
+        <input type="button" value="Clicca qui!" onclick="alert('Hai aperto una finestra!');"><br>
+        <input type="reset" value="ripristina"><br>
+        <input type="submit" value="Invia">
+        
+
+    </form>
+
+</body>
+</html>
